@@ -1,15 +1,18 @@
 public class ShapeClass {
-    private String name;
-
-    public ShapeClass() {
-       throw new NullPointerException();
-    }
+    protected String name;
 
     public ShapeClass(String _name) {
+        if (_name == null){
+            throw new NullPointerException();
+        }
         name = _name;
     }
 
     public String getName() {
         return name;
+    }
+
+    public String print_details(){
+        return null;
     }
 }

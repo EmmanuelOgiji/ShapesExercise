@@ -9,7 +9,7 @@ public class TestShapes {
     public void ShapeThrowException(){
         assertThatExceptionOfType(NullPointerException.class)
                 .isThrownBy(() -> {
-                    ShapeClass square = new ShapeClass();
+                    ShapeClass square = new ShapeClass(null);
                 });
     }
 
