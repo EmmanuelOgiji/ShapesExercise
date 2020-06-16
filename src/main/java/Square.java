@@ -33,12 +33,13 @@ public class Square extends ShapeClass {
         return Math.pow(this.length, 2);
     }
 
+    @Override
     public String print_details(){
         return String.format(
                 "This square has Length %s, Perimeter %s and Area %s",
                 this.length,
-                this.calculate_perimeter(),
-                this.calculate_area()
+                this.perimeter,
+                this.area
         );
     }
 

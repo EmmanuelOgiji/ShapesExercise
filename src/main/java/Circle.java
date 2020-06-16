@@ -1,6 +1,7 @@
 public class Circle extends ShapeClass{
     private double radius;
     private double circumference;
+    private double area;
 
     public Circle(double _radius){
         super("circle");
@@ -9,6 +10,7 @@ public class Circle extends ShapeClass{
         }
         radius = _radius;
         circumference = this.calculate_circumference();
+        area = this.calculate_area();
     }
 
     public double getRadius(){
@@ -17,10 +19,24 @@ public class Circle extends ShapeClass{
     public double getCircumference(){
         return circumference;
     }
+    public double getArea(){return area; }
 
 
 
     private double calculate_circumference(){
         return Math.round(Math.PI * 2 * this.radius);
+    }
+
+    private double calculate_area(){
+        return Math.round(Math.PI * (Math.pow(this.radius, 2)));
+    }
+
+    public String print_details(){
+        return String.format(
+                "This circle has Radius %s, Circumference %s and Area %s",
+                this.radius,
+                this.circumference,
+                this.area
+        );
     }
 }

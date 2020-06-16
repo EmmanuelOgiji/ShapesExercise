@@ -1,5 +1,5 @@
-public class ShapeClass {
-    protected String name;
+public abstract class ShapeClass {
+    private String name;
 
     public ShapeClass(String _name) {
         if (_name == null){
@@ -12,7 +12,5 @@ public class ShapeClass {
         return name;
     }
 
-    public String print_details(){
-        return null;
-    }
+    public abstract String print_details();
 }

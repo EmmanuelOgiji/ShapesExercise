@@ -31,6 +31,18 @@ public class TestCircle {
         assertThat(circle.getCircumference()).isEqualTo(88);
     }
 
+    @Test
+    public void TestCircleAreaWhenRadiusis7(){
+        Circle circle = new Circle(7);
+        assertThat(circle.getArea()).isEqualTo(154);
+    }
+
+    @Test
+    public void TestCirclePrintDetailsWhenRadiusis21(){
+        Circle circle = new Circle(21);
+        String expected = "This circle has Radius 21.0, Circumference 132.0 and Area 1385.0";
+        assertThat(circle.print_details()).isEqualTo(expected);
+    }
 
 
 
