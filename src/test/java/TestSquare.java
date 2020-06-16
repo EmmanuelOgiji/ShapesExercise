@@ -20,39 +20,27 @@ public class TestSquare {
     }
 
     @Test
-    public void TestSquarePerimeter0(){
-        Square square = new Square(0);
-        assertThat(square.calculate_perimeter()).isEqualTo(0);
-    }
-
-    @Test
     public void TestSquarePerimeterWhenLengthis5(){
         Square square = new Square(5);
-        assertThat(square.calculate_perimeter()).isEqualTo(20);
+        assertThat(square.getPerimeter()).isEqualTo(20);
     }
 
     @Test
     public void TestSquarePerimeterWhenLengthis20(){
         Square square = new Square(20);
-        assertThat(square.calculate_perimeter()).isEqualTo(80);
-    }
-
-    @Test
-    public void TestSquareArea0(){
-        Square square = new Square(0);
-        assertThat(square.calculate_area()).isEqualTo(0);
+        assertThat(square.getPerimeter()).isEqualTo(80);
     }
 
     @Test
     public void TestSquareAreaWhenLengthis5(){
         Square square = new Square(5);
-        assertThat(square.calculate_area()).isEqualTo(25);
+        assertThat(square.getArea()).isEqualTo(25);
     }
 
     @Test
     public void TestSquareAreaWhenLengthis6(){
         Square square = new Square(6);
-        assertThat(square.calculate_area()).isEqualTo(36);
+        assertThat(square.getArea()).isEqualTo(36);
     }
 
     @Test

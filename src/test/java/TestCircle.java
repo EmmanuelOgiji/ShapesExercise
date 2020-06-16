@@ -19,6 +19,11 @@ public class TestCircle {
         assertThat(circle.getRadius()).isEqualTo(7);
     }
 
+    @Test
+    public void TestCircleCircumference(){
+        Circle circle = new Circle(7);
+        assertThat(circle.getCircumference()).isEqualTo(44);
+    }
 
 
 

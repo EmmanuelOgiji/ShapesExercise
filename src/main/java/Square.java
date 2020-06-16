@@ -1,23 +1,35 @@
 public class Square extends ShapeClass {
     private double length;
+    private double perimeter;
+    private double area;
 
     public Square(double _length){
         super("square");
-        if (length == 0){
+        if (_length == 0){
             throw new IllegalArgumentException("A square cannot have length 0");
         }
         length = _length;
+        perimeter = this.calculate_perimeter();
+        area = this.calculate_area();
     }
 
     public double getLength() {
         return length;
     }
 
-    public double calculate_perimeter(){
+    public double getArea(){
+        return area;
+    }
+
+    public double getPerimeter(){
+        return perimeter;
+    }
+
+    private double calculate_perimeter(){
         return (4 * this.length);
     }
 
-    public double calculate_area(){
+    private double calculate_area(){
         return Math.pow(this.length, 2);
     }
 
