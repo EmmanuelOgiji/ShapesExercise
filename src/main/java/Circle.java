@@ -3,7 +3,7 @@ public class Circle extends ShapeClass{
     private double circumference;
     private double area;
 
-    public Circle(double _radius){
+    Circle(double _radius){
         super("circle");
         if (_radius == 0){
             throw new IllegalArgumentException("A circle cannot have radius 0");
@@ -13,13 +13,13 @@ public class Circle extends ShapeClass{
         area = this.calculate_area();
     }
 
-    public double getRadius(){
+    double getRadius(){
         return radius;
     }
-    public double getCircumference(){
+    double getCircumference(){
         return circumference;
     }
-    public double getArea(){return area; }
+    double getArea(){return area; }
 
 
 

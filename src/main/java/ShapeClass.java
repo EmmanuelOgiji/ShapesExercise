@@ -1,7 +1,7 @@
 public abstract class ShapeClass {
     private String name;
 
-    public ShapeClass(String _name) {
+    ShapeClass(String _name) {
         if (_name == null){
             throw new NullPointerException();
         }

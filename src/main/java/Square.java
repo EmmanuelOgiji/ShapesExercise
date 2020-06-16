@@ -3,7 +3,7 @@ public class Square extends ShapeClass {
     private double perimeter;
     private double area;
 
-    public Square(double _length){
+    Square(double _length){
         super("square");
         if (_length == 0){
             throw new IllegalArgumentException("A square cannot have length 0");
@@ -13,15 +13,15 @@ public class Square extends ShapeClass {
         area = this.calculate_area();
     }
 
-    public double getLength() {
+    double getLength() {
         return length;
     }
 
-    public double getArea(){
+    double getArea(){
         return area;
     }
 
-    public double getPerimeter(){
+    double getPerimeter(){
         return perimeter;
     }
 
