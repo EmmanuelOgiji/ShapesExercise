@@ -49,7 +49,7 @@ public class TestSquare {
     @Test
     public void TestSquarePrintDetailsLength5(){
         Square square = new Square(5);
-        String expected = "This square has Length 5, Perimeter 20 and Area 25";
+        String expected = "This square has Length 5.0, Perimeter 20.0 and Area 25.0";
         assertThat(square.print_details()).isEqualTo(expected);
     }
 

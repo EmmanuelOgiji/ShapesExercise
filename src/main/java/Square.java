@@ -1,5 +1,5 @@
 public class Square extends ShapeClass {
-    protected double length;
+    private double length;
 
     public Square(double _length){
         super("square");
