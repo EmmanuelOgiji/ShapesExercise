@@ -3,6 +3,9 @@ public class Square extends ShapeClass {
 
     public Square(double _length){
         super("square");
+        if (length == 0){
+            throw new IllegalArgumentException("A square cannot have length 0");
+        }
         length = _length;
     }
 

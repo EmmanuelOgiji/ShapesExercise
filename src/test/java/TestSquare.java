@@ -1,8 +1,17 @@
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 
 public class TestSquare {
+
+    @Test
+    public void TestSquareDoesNotAccept0Length(){
+        assertThatExceptionOfType(IllegalArgumentException.class)
+                .isThrownBy(() -> {
+                    Square square = new Square(0);
+                }).withMessage("A square cannot have length 0");
+    }
 
     @Test
     public void TestSquareAcceptsLength(){
