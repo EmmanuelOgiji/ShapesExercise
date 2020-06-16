@@ -20,9 +20,15 @@ public class TestCircle {
     }
 
     @Test
-    public void TestCircleCircumference(){
+    public void TestCircleCircumferenceWhenRadiusis7(){
         Circle circle = new Circle(7);
         assertThat(circle.getCircumference()).isEqualTo(44);
+    }
+
+    @Test
+    public void TestCircleCircumferenceWhenRadiusis14(){
+        Circle circle = new Circle(14);
+        assertThat(circle.getCircumference()).isEqualTo(88);
     }
 
 
