@@ -1,3 +1,5 @@
+package shapes;
+
 public abstract class ShapeClass {
     private String name;
 
@@ -11,5 +13,6 @@ public abstract class ShapeClass {
     public String getName() {
         return name;
     }
+
     public abstract String print_details();
 }

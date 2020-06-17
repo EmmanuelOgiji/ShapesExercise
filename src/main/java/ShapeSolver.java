@@ -1,3 +1,7 @@
+import shapes.Circle;
+import shapes.ShapeClass;
+import shapes.Square;
+
 import java.util.ArrayList;
 import java.util.List;
 

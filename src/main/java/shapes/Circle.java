@@ -1,9 +1,11 @@
-public class Circle extends ShapeClass{
+package shapes;
+
+public class Circle extends ShapeClass {
     private double radius;
     private double circumference;
     private double area;
 
-    Circle(double _radius){
+    public Circle(double _radius) {
         super("circle");
         if (_radius == 0){
             throw new IllegalArgumentException("A circle cannot have radius 0");
@@ -13,13 +15,17 @@ public class Circle extends ShapeClass{
         area = this.calculate_area();
     }
 
-    double getRadius(){
+    public double getRadius() {
         return radius;
     }
-    double getCircumference(){
+
+    public double getCircumference() {
         return circumference;
     }
-    double getArea(){return area; }
+
+    public double getArea() {
+        return area;
+    }
 
 
 
