@@ -1,8 +1,5 @@
-import shapes.Circle;
 import shapes.ShapeClass;
-import shapes.Square;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ShapeSolver {
@@ -13,13 +10,10 @@ public class ShapeSolver {
     }
 
 
-    public String solve_shape(double dimension) {
-        List<ShapeClass> shapeClasses = new ArrayList<>();
-        shapeClasses.add(new Square(dimension));
-        shapeClasses.add(new Circle(dimension));
+    public String solve_shape(List<ShapeClass> shapeClasses) {
         for (ShapeClass shapeClass : shapeClasses) {
             if (shapeClass.getName().equals(shape)) {
-                return shapeClass.print_details();
+                return shapeClass.printDetails();
             }
         }
         return "N/A";

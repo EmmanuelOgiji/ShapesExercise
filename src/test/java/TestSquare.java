@@ -48,13 +48,13 @@ public class TestSquare {
     public void TestSquarePrintDetailsLength5(){
         Square square = new Square(5);
         String expected = "This square has Length 5.0, Perimeter 20.0 and Area 25.0";
-        assertThat(square.print_details()).isEqualTo(expected);
+        assertThat(square.printDetails()).isEqualTo(expected);
     }
 
     @Test
     public void TestSquarePrintDetailsLength6(){
         Square square = new Square(6);
         String expected = "This square has Length 6.0, Perimeter 24.0 and Area 36.0";
-        assertThat(square.print_details()).isEqualTo(expected);
+        assertThat(square.printDetails()).isEqualTo(expected);
     }
 }

@@ -11,8 +11,8 @@ public class Circle extends ShapeClass {
             throw new IllegalArgumentException("A circle cannot have radius 0");
         }
         radius = _radius;
-        circumference = this.calculate_circumference();
-        area = this.calculate_area();
+        circumference = this.calculateCircumference();
+        area = this.calculateArea();
     }
 
     public double getRadius() {
@@ -28,17 +28,16 @@ public class Circle extends ShapeClass {
     }
 
 
-
-    private double calculate_circumference(){
+    private double calculateCircumference() {
         return Math.round(Math.PI * 2 * this.radius);
     }
 
-    private double calculate_area(){
+    private double calculateArea() {
         return Math.round(Math.PI * (Math.pow(this.radius, 2)));
     }
 
     @Override
-    public String print_details(){
+    public String printDetails() {
         return String.format(
                 "This circle has Radius %s, Circumference %s and Area %s",
                 this.radius,

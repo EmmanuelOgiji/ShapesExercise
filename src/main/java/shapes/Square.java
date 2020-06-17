@@ -11,8 +11,8 @@ public class Square extends ShapeClass {
             throw new IllegalArgumentException("A square cannot have length 0");
         }
         length = _length;
-        perimeter = this.calculate_perimeter();
-        area = this.calculate_area();
+        perimeter = this.calculatePerimeter();
+        area = this.calculateArea();
     }
 
     public double getLength() {
@@ -27,16 +27,16 @@ public class Square extends ShapeClass {
         return perimeter;
     }
 
-    private double calculate_perimeter(){
+    private double calculatePerimeter() {
         return (4 * this.length);
     }
 
-    private double calculate_area(){
+    private double calculateArea() {
         return Math.pow(this.length, 2);
     }
 
     @Override
-    public String print_details(){
+    public String printDetails() {
         return String.format(
                 "This square has Length %s, Perimeter %s and Area %s",
                 this.length,
