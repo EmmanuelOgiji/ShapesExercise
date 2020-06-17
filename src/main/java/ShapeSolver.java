@@ -9,7 +9,6 @@ public class ShapeSolver {
     }
 
 
-
     public String solve_shape(double dimension) {
         List<ShapeClass> shapeClasses = new ArrayList<>();
         shapeClasses.add(new Square(dimension));

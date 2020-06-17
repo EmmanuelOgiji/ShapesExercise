@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Square extends ShapeClass {
     private double length;
     private double perimeter;
