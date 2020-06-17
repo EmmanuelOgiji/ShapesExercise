@@ -8,7 +8,15 @@ public class ShapeSolver {
 
 
     public String solve_shape(double dimension) {
-        return "This square has Length 6.0, Perimeter 24.0 and Area 36.0";
+        if (this.shape.equals("square")) {
+            Square square = new Square(dimension);
+            return square.print_details();
+        }
+        if (this.shape.equals("circle")) {
+            Circle circle = new Circle(dimension);
+            return circle.print_details();
+        }
+        return "N/A";
     }
 
 }
