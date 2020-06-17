@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class ShapeSolver {
     private String shape;
 
@@ -8,13 +11,13 @@ public class ShapeSolver {
 
 
     public String solve_shape(double dimension) {
-        if (this.shape.equals("square")) {
-            Square square = new Square(dimension);
-            return square.print_details();
-        }
-        if (this.shape.equals("circle")) {
-            Circle circle = new Circle(dimension);
-            return circle.print_details();
+        List<ShapeClass> shapeClasses = new ArrayList<>();
+        shapeClasses.add(new Square(dimension));
+        shapeClasses.add(new Circle(dimension));
+        for (int i = 0; i < shapeClasses.size(); i++) {
+            if (shapeClasses.get(i).getName().equals(shape)){
+                return shapeClasses.get(i).print_details();
+            }
         }
         return "N/A";
     }
