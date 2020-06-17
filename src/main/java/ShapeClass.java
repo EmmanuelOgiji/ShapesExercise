@@ -11,6 +11,5 @@ public abstract class ShapeClass {
     public String getName() {
         return name;
     }
-
     public abstract String print_details();
 }

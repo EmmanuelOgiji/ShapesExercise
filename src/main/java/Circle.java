@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Circle extends ShapeClass{
     private double radius;
     private double circumference;
@@ -31,6 +33,7 @@ public class Circle extends ShapeClass{
         return Math.round(Math.PI * (Math.pow(this.radius, 2)));
     }
 
+    @Override
     public String print_details(){
         return String.format(
                 "This circle has Radius %s, Circumference %s and Area %s",
