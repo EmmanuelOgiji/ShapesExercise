@@ -14,9 +14,9 @@ public class ShapeSolver {
         List<ShapeClass> shapeClasses = new ArrayList<>();
         shapeClasses.add(new Square(dimension));
         shapeClasses.add(new Circle(dimension));
-        for (int i = 0; i < shapeClasses.size(); i++) {
-            if (shapeClasses.get(i).getName().equals(shape)){
-                return shapeClasses.get(i).print_details();
+        for (ShapeClass shapeClass : shapeClasses) {
+            if (shapeClass.getName().equals(shape)) {
+                return shapeClass.print_details();
             }
         }
         return "N/A";
