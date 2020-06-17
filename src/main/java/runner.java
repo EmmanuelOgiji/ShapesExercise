@@ -6,9 +6,9 @@ public class runner {
         Scanner scanner = new Scanner(System.in);
         String shape = scanner.nextLine();
         System.out.println(String.format("You chose %s", shape));
-        System.out.println("What is the length of the square?");
-        double length = Double.parseDouble(scanner.nextLine());
-        Square square = new Square(length);
-        System.out.println(square.print_details());
+        ShapeSolver solver = new ShapeSolver(shape);
+        System.out.println("What is the dimension of the shape?");
+        double dimension = Double.parseDouble(scanner.nextLine());
+        System.out.println(solver.solve_shape(dimension));
     }
 }
