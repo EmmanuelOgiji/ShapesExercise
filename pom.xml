@@ -34,5 +34,10 @@
             <version>3.16.1</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.9.12</version>
+        </dependency>
     </dependencies>
 </project>
